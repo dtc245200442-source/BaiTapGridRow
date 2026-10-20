@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #444;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+.grid-container div {
+    background-color: lightblue;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #6aa6c1;
+}
+
+/* Vi du 1: auto */
+.grid-auto .item1 {
+    grid-column-start: auto;
+    background-color: lightgreen;
+}
+
+/* Vi du 2: span 2 */
+.grid-span .item1 {
+    grid-column-start: span 2;
+    background-color: lightcoral;
+}
+
+/* Vi du 3: column-line */
+.grid-line .item1 {
+    grid-column-start: 2;
+    background-color: khaki;
+}
